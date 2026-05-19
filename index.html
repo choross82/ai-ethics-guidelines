@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 윤리 가이드라인 모음 — 국가기관 & 종교계</title>
+<meta name="description" content="UNESCO·OECD·EU AI Act·NIST부터 Rome Call·UMC·로잔까지 — 국가기관과 종교계가 발표한 47건의 AI 윤리 가이드라인을 한눈에 비교·탐색.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<style>
+:root {
+  --bg: #fcfcfa;
+  --ink: #1a1a17;
+  --ink-soft: #4a4a45;
+  --ink-mute: #8a8a82;
+  --line: #e6e3dc;
+  --line-strong: #c8c4b8;
+  --accent: #1d3557;
+  --accent-soft: #f0eee6;
+  --national: #2c5282;
+  --religious: #744210;
+  --warn: #c53030;
+  --tag-bg: #f0eee6;
+  --max-width: 1280px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Header ───────────────────────────────────────────────────────── */
+header {
+  border-bottom: 1px solid var(--line);
+  padding: 28px 32px 22px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+.subtitle {
+  color: var(--ink-mute);
+  font-size: 14px;
+  margin: 0;
+}
+.subtitle strong { color: var(--ink-soft); font-weight: 600; }
+
+/* ── Controls bar ─────────────────────────────────────────────────── */
+.controls {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+.search-box {
+  flex: 1;
+  min-width: 260px;
+  position: relative;
+}
+.search-box input {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  font: inherit;
+  background: white;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.search-box input:focus { border-color: var(--accent); }
+.search-box::before {
+  content: "⌕";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ink-mute);
+  font-size: 18px;
+}
+
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.view-toggle button {
+  background: white;
+  border: none;
+  padding: 9px 14px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--ink-soft);
+  border-right: 1px solid var(--line);
+}
+.view-toggle button:last-child { border-right: none; }
+.view-toggle button.active {
+  background: var(--ink);
+  color: white;
+}
+
+/* ── Filters ──────────────────────────────────────────────────────── */
+.filters {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 14px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--line);
+}
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.filter-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 4px;
+}
+.chip {
+  background: white;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: var(--ink-soft);
+}
+.chip:hover { border-color: var(--ink); }
+.chip.active {
+  background: var(--ink);
+  color: white;
+  border-color: var(--ink);
+}
+.chip-national.active { background: var(--national); border-color: var(--national); }
+.chip-religious.active { background: var(--religious); border-color: var(--religious); }
+
+.count-info {
+  margin-left: auto;
+  color: var(--ink-mute);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Compare bar ──────────────────────────────────────────────────── */
+.compare-bar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px 32px;
+  background: #fff8e1;
+  border-bottom: 1px solid #e6d97f;
+  display: none;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+.compare-bar.visible { display: flex; }
+.compare-bar .count { font-weight: 600; }
+.btn {
+  background: var(--ink);
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover { background: var(--accent); }
+.btn.secondary { background: white; color: var(--ink-soft); border: 1px solid var(--line-strong); }
+.btn.secondary:hover { background: var(--accent-soft); }
+
+/* ── Main / Grid view ─────────────────────────────────────────────── */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 32px 80px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px 20px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+.card.compare-selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.card-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink-mute);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+.card-cat {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  color: white;
+}
+.card-cat.national { background: var(--national); }
+.card-cat.religious { background: var(--religious); }
+
+.card-title {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.card-meta {
+  font-size: 12.5px;
+  color: var(--ink-mute);
+  margin-bottom: 10px;
+}
+.card-meta .sep { margin: 0 6px; opacity: 0.5; }
+.card-desc {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  flex: 1;
+  margin: 0 0 12px;
+}
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: auto;
+}
+.tag {
+  font-size: 11px;
+  background: var(--tag-bg);
+  color: var(--ink-soft);
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.card-compare-check {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--line-strong);
+  background: white;
+  border-radius: 4px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body.compare-mode .card-compare-check { display: flex; }
+body.compare-mode .card-cat { opacity: 0.3; }
+.card.compare-selected .card-compare-check {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.card.compare-selected .card-compare-check::after { content: "✓"; font-size: 14px; }
+
+/* ── Timeline view ────────────────────────────────────────────────── */
+.timeline { position: relative; padding-left: 24px; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--line-strong);
+}
+.timeline-year {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 28px 0 14px -24px;
+  padding-left: 24px;
+  position: relative;
+  color: var(--ink);
+}
+.timeline-year::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  width: 9px;
+  height: 9px;
+  background: var(--ink);
+  border-radius: 50%;
+  border: 2px solid var(--bg);
+}
+.timeline-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin-left: 0;
+}
+.timeline-items .card { padding: 14px 16px; }
+.timeline-items .card-title { font-size: 14px; }
+.timeline-items .card-desc { font-size: 12.5px; }
+
+/* ── Compare view ─────────────────────────────────────────────────── */
+.compare-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.compare-grid .card { cursor: default; }
+.compare-grid .card:hover { transform: none; }
+.compare-summary-preview {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+  max-height: 380px;
+  overflow: auto;
+  line-height: 1.55;
+}
+.compare-summary-preview h2,
+.compare-summary-preview h3 { font-size: 12.5px; margin: 10px 0 4px; color: var(--ink); font-weight: 700; }
+.compare-summary-preview p { margin: 5px 0; }
+.compare-summary-preview ul { padding-left: 18px; margin: 5px 0; }
+.compare-summary-preview li { margin: 2px 0; }
+.compare-summary-preview h1 { display: none; }
+
+.empty-state {
+  text-align: center;
+  padding: 80px 32px;
+  color: var(--ink-mute);
+}
+.empty-state strong { color: var(--ink-soft); display: block; margin-bottom: 4px; font-size: 16px; }
+
+/* ── Modal ────────────────────────────────────────────────────────── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 100;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+.modal-backdrop.visible { display: flex; }
+.modal {
+  background: var(--bg);
+  max-width: 780px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 34px 40px 32px;
+  position: relative;
+  border: 1px solid var(--line);
+}
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--ink-mute);
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+.modal-close:hover { background: var(--accent-soft); color: var(--ink); }
+.modal-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+.modal-head .card-cat { display: inline-block; margin-bottom: 8px; }
+.modal-title {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 8px;
+}
+.modal-meta {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+.modal-meta .sep { margin: 0 6px; opacity: 0.5; }
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0 24px;
+  padding: 14px;
+  background: var(--accent-soft);
+  border-radius: 6px;
+}
+.modal-actions a {
+  background: white;
+  color: var(--ink);
+  padding: 9px 16px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--line-strong);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 0.15s;
+}
+.modal-actions a:hover { border-color: var(--ink); text-decoration: none; }
+.modal-actions a.primary { background: var(--ink); color: white; border-color: var(--ink); }
+.modal-actions a.primary:hover { background: var(--accent); border-color: var(--accent); }
+.modal-actions a.disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
+
+.modal-body {
+  font-family: 'Noto Serif KR', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+.modal-body h1 { display: none; } /* 본문 제목은 모달 헤더에 이미 있음 */
+.modal-body h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  margin: 28px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.modal-body h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 18px 0 6px;
+  color: var(--ink);
+}
+.modal-body p { margin: 8px 0; }
+.modal-body ul, .modal-body ol { padding-left: 22px; margin: 10px 0; }
+.modal-body li { margin: 5px 0; }
+.modal-body strong { color: var(--ink); }
+
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 32px 36px;
+  font-size: 12.5px;
+  color: var(--ink-mute);
+  border-top: 1px solid var(--line);
+}
+footer p { margin: 4px 0; }
+
+@media (max-width: 640px) {
+  header, .controls, .filters, .compare-bar, main, footer { padding-left: 18px; padding-right: 18px; }
+  .modal { padding: 24px 22px; }
+  .modal-title { font-size: 19px; }
+  .modal-body { font-size: 14px; }
+  .count-info { width: 100%; margin-left: 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AI 윤리 가이드라인 모음</h1>
+  <p class="subtitle">
+    국가기관 · 국제기구 · 종교계가 발표한 <strong>47건</strong>의 AI 윤리 가이드라인 ·
+    UNESCO부터 Rome Call까지 한눈에 비교·탐색
+  </p>
+</header>
+
+<div class="controls">
+  <div class="search-box">
+    <input type="search" id="search" placeholder="제목, 기관, 태그로 검색…" autocomplete="off">
+  </div>
+  <div class="view-toggle" role="tablist">
+    <button data-view="grid" class="active">그리드</button>
+    <button data-view="timeline">타임라인</button>
+    <button data-view="compare">비교</button>
+  </div>
+</div>
+
+<div class="filters">
+  <div class="filter-group">
+    <span class="filter-label">분류</span>
+    <button class="chip active" data-cat="all">전체</button>
+    <button class="chip chip-national" data-cat="national">국가기관</button>
+    <button class="chip chip-religious" data-cat="religious">교단·종교</button>
+  </div>
+  <div class="filter-group" id="group-filters">
+    <span class="filter-label">그룹</span>
+    <!-- JS가 채움 -->
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">연도</span>
+    <button class="chip active" data-year="all">전체</button>
+    <button class="chip" data-year="2025+">2025</button>
+    <button class="chip" data-year="2024">2024</button>
+    <button class="chip" data-year="2023">2023</button>
+    <button class="chip" data-year="2020-22">2020–22</button>
+    <button class="chip" data-year="pre-2020">~2019</button>
+  </div>
+  <div class="count-info" id="count-info">— / 47</div>
+</div>
+
+<div class="compare-bar" id="compare-bar">
+  <span class="count" id="compare-count">0개 선택</span>
+  <span style="color: var(--ink-mute);">— 카드를 클릭해 비교할 문서를 선택하세요 (2개 이상)</span>
+  <button class="btn" id="compare-go">옆에 나란히 보기</button>
+  <button class="btn secondary" id="compare-clear">선택 해제</button>
+</div>
+
+<main id="content">
+  <div class="grid" id="grid"></div>
+  <div class="empty-state" id="empty" style="display:none;">
+    <strong>일치하는 문서가 없습니다</strong>
+    <span>검색어나 필터를 조정해보세요.</span>
+  </div>
+</main>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal">
+    <button class="modal-close" aria-label="닫기">&times;</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<footer>
+  <p>총 47건 — 국가기관별 19건, 교단별 28건. PDF 30건, HTML 17건.</p>
+  <p>각 문서의 요약은 원문을 한국어로 정리한 것이며, 원문 링크는 공식 발행처를 가리킵니다.</p>
+  <p>저장소 구조 및 라이선스 정보는 프로젝트 루트의 README.md를 참고하세요.</p>
+</footer>
+
+<script src="data.js"></script>
+<script>
+// ──────────────────────────────────────────────────────────────────────
+// 상태
+// ──────────────────────────────────────────────────────────────────────
+const state = {
+  search: "",
+  category: "all",        // all | national | religious
+  group: "all",
+  year: "all",
+  view: "grid",           // grid | timeline | compare
+  selected: new Set(),
+};
+
+const $ = (sel) => document.querySelector(sel);
+const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+// ──────────────────────────────────────────────────────────────────────
+// 그룹 필터 동적 생성
+// ──────────────────────────────────────────────────────────────────────
+function buildGroupFilters() {
+  const groupFilters = $("#group-filters");
+  const groups = new Set();
+  window.GUIDELINES.forEach((g) => groups.add(g.group));
+  groupFilters.innerHTML = '<span class="filter-label">그룹</span><button class="chip active" data-group="all">전체</button>';
+  // 국가기관 → 종교 순으로 정렬
+  const ordered = [
+    "국제기구", "유럽연합", "미국", "영국", "G7", "다자",
+    "한국", "중국", "일본", "싱가포르", "비정부",
+    "가톨릭", "에큐메니컬", "장로교", "성공회", "복음주의",
+    "유대교", "초종교"
+  ];
+  ordered.forEach((g) => {
+    if (groups.has(g)) {
+      const b = document.createElement("button");
+      b.className = "chip";
+      b.dataset.group = g;
+      b.textContent = g;
+      groupFilters.appendChild(b);
+    }
+  });
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// 필터링
+// ──────────────────────────────────────────────────────────────────────
+function filterEntries() {
+  const q = state.search.trim().toLowerCase();
+  return window.GUIDELINES.filter((g) => {
+    if (state.category !== "all" && g.category !== state.category) return false;
+    if (state.group !== "all" && g.group !== state.group) return false;
+    if (state.year !== "all") {
+      const y = g.year;
+      if (state.year === "2025+" && (y == null || y < 2025)) return false;
+      if (state.year === "2024" && y !== 2024) return false;
+      if (state.year === "2023" && y !== 2023) return false;
+      if (state.year === "2020-22" && (y == null || y < 2020 || y > 2022)) return false;
+      if (state.year === "pre-2020" && (y == null || y >= 2020)) return false;
+    }
+    if (q) {
+      const blob = [
+        g.title, g.issuer, g.shortDesc, g.group,
+        g.country || "", g.tradition || "", (g.tags || []).join(" "),
+        g.documentFile || "", g.summary
+      ].join(" ").toLowerCase();
+      if (!blob.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// 카드 렌더
+// ──────────────────────────────────────────────────────────────────────
+function renderCard(g) {
+  const selected = state.selected.has(g.id);
+  return `
+    <div class="card ${selected ? "compare-selected" : ""}" data-id="${g.id}">
+      <div class="card-compare-check"></div>
+      <div class="card-head">
+        <span class="card-num">${g.category === "national" ? "N" : "R"}-${g.number}</span>
+        <span class="card-cat ${g.category}">${g.group}</span>
+      </div>
+      <h3 class="card-title">${escapeHtml(g.title)}</h3>
+      <div class="card-meta">
+        ${escapeHtml(g.issuer || "")}${g.year ? `<span class="sep">·</span>${g.year}` : ""}<span class="sep">·</span>${g.format || "—"}
+      </div>
+      <p class="card-desc">${escapeHtml(g.shortDesc || "")}</p>
+      <div class="card-tags">
+        ${(g.tags || []).slice(0, 4).map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function renderGrid(entries) {
+  const grid = $("#grid");
+  if (entries.length === 0) {
+    grid.innerHTML = "";
+    $("#empty").style.display = "block";
+    return;
+  }
+  $("#empty").style.display = "none";
+  grid.innerHTML = entries.map(renderCard).join("");
+  grid.className = "grid";
+}
+
+function renderTimeline(entries) {
+  const grid = $("#grid");
+  if (entries.length === 0) {
+    grid.innerHTML = "";
+    $("#empty").style.display = "block";
+    return;
+  }
+  $("#empty").style.display = "none";
+  // 연도별 그룹화 (year null은 "기타"로)
+  const byYear = {};
+  entries.forEach((g) => {
+    const y = g.year || "기타";
+    if (!byYear[y]) byYear[y] = [];
+    byYear[y].push(g);
+  });
+  const years = Object.keys(byYear).sort((a, b) => {
+    if (a === "기타") return 1;
+    if (b === "기타") return -1;
+    return b - a; // 최신 먼저
+  });
+  grid.className = "timeline";
+  grid.innerHTML = years
+    .map(
+      (y) => `
+      <div class="timeline-year">${y}</div>
+      <div class="timeline-items">
+        ${byYear[y].map(renderCard).join("")}
+      </div>
+    `
+    )
+    .join("");
+}
+
+function renderCompare(entries) {
+  const grid = $("#grid");
+  const chosen = entries.filter((g) => state.selected.has(g.id));
+  if (chosen.length === 0) {
+    grid.className = "";
+    grid.innerHTML = `
+      <div class="empty-state">
+        <strong>비교할 문서를 선택하세요</strong>
+        <span>그리드/타임라인 뷰에서 카드를 클릭하거나, 비교 모드에서 체크박스로 선택할 수 있습니다.</span>
+      </div>
+    `;
+    $("#empty").style.display = "none";
+    return;
+  }
+  $("#empty").style.display = "none";
+  grid.className = "compare-grid";
+  grid.innerHTML = chosen
+    .map(
+      (g) => `
+      <div class="card" data-id="${g.id}">
+        <div class="card-head">
+          <span class="card-num">${g.category === "national" ? "N" : "R"}-${g.number}</span>
+          <span class="card-cat ${g.category}">${g.group}</span>
+        </div>
+        <h3 class="card-title">${escapeHtml(g.title)}</h3>
+        <div class="card-meta">
+          ${escapeHtml(g.issuer || "")}${g.year ? `<span class="sep">·</span>${g.year}` : ""}<span class="sep">·</span>${g.format || "—"}
+        </div>
+        <p class="card-desc">${escapeHtml(g.shortDesc || "")}</p>
+        <div class="card-tags">
+          ${(g.tags || []).map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
+        </div>
+        <div class="compare-summary-preview">${marked.parse(g.summary || "")}</div>
+      </div>
+    `
+    )
+    .join("");
+}
+
+function render() {
+  const entries = filterEntries();
+  $("#count-info").textContent = `${entries.length} / 47`;
+
+  if (state.view === "grid") renderGrid(entries);
+  else if (state.view === "timeline") renderTimeline(entries);
+  else if (state.view === "compare") renderCompare(window.GUIDELINES);
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// 모달
+// ──────────────────────────────────────────────────────────────────────
+function openModal(id) {
+  const g = window.GUIDELINES.find((x) => x.id === id);
+  if (!g) return;
+  const content = $("#modal-content");
+
+  // 우선순위: 공식 URL → 저장소 내 원본 (둘 중 하나만 노출)
+  let sourceBtn;
+  if (g.officialUrl) {
+    sourceBtn = `<a href="${g.officialUrl}" target="_blank" rel="noopener" class="primary">↗ 공식 발행처에서 원문 보기</a>`;
+  } else if (g.localPath) {
+    sourceBtn = `<a href="${encodeURI(g.localPath)}" target="_blank" rel="noopener" class="primary">📄 저장소 내 원본 보기 (${g.format})</a>`;
+  } else {
+    sourceBtn = `<a class="primary disabled">원본 링크 없음</a>`;
+  }
+
+  content.innerHTML = `
+    <div class="modal-head">
+      <span class="card-cat ${g.category}">${g.group}</span>
+      <h2 class="modal-title">${escapeHtml(g.title)}</h2>
+      <div class="modal-meta">
+        ${escapeHtml(g.issuer || "")}
+        ${g.publishDate ? `<span class="sep">·</span>${escapeHtml(g.publishDate)}` : (g.year ? `<span class="sep">·</span>${g.year}` : "")}
+        ${g.language ? `<span class="sep">·</span>${escapeHtml(g.language)}` : ""}
+        <span class="sep">·</span>${g.format || "—"}
+      </div>
+    </div>
+    <div class="modal-actions">
+      ${sourceBtn}
+    </div>
+    <div class="modal-body">${marked.parse(g.summary || "")}</div>
+  `;
+  $("#modal-backdrop").classList.add("visible");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  $("#modal-backdrop").classList.remove("visible");
+  document.body.style.overflow = "";
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// 이벤트
+// ──────────────────────────────────────────────────────────────────────
+$("#search").addEventListener("input", (e) => {
+  state.search = e.target.value;
+  render();
+});
+
+// 분류 칩
+$$(".chip[data-cat]").forEach((chip) => {
+  chip.addEventListener("click", () => {
+    $$(".chip[data-cat]").forEach((c) => c.classList.remove("active"));
+    chip.classList.add("active");
+    state.category = chip.dataset.cat;
+    // 분류 바뀌면 그룹 필터도 전체로 리셋
+    state.group = "all";
+    $$("#group-filters .chip").forEach((c) => c.classList.remove("active"));
+    const allBtn = $('#group-filters .chip[data-group="all"]');
+    if (allBtn) allBtn.classList.add("active");
+    render();
+  });
+});
+
+// 그룹 칩 (위임)
+$("#group-filters").addEventListener("click", (e) => {
+  const chip = e.target.closest(".chip");
+  if (!chip) return;
+  $$("#group-filters .chip").forEach((c) => c.classList.remove("active"));
+  chip.classList.add("active");
+  state.group = chip.dataset.group;
+  render();
+});
+
+// 연도 칩
+$$(".chip[data-year]").forEach((chip) => {
+  chip.addEventListener("click", () => {
+    $$(".chip[data-year]").forEach((c) => c.classList.remove("active"));
+    chip.classList.add("active");
+    state.year = chip.dataset.year;
+    render();
+  });
+});
+
+// 뷰 토글
+$$(".view-toggle button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    $$(".view-toggle button").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    state.view = btn.dataset.view;
+    document.body.classList.toggle("compare-mode", state.view === "compare");
+    $("#compare-bar").classList.toggle("visible", state.view === "compare");
+    render();
+  });
+});
+
+// 카드 클릭 (위임)
+$("#content").addEventListener("click", (e) => {
+  const card = e.target.closest(".card");
+  if (!card) return;
+  const id = card.dataset.id;
+  if (!id) return;
+  if (state.view === "compare") {
+    // 비교 모드: 체크박스 토글
+    if (state.selected.has(id)) state.selected.delete(id);
+    else state.selected.add(id);
+    updateCompareCount();
+    render();
+  } else {
+    openModal(id);
+  }
+});
+
+function updateCompareCount() {
+  $("#compare-count").textContent = `${state.selected.size}개 선택`;
+}
+
+$("#compare-clear").addEventListener("click", () => {
+  state.selected.clear();
+  updateCompareCount();
+  render();
+});
+
+$("#compare-go").addEventListener("click", () => {
+  // 이미 비교 뷰. 그냥 스크롤 위로
+  window.scrollTo({ top: 200, behavior: "smooth" });
+});
+
+// 모달 닫기
+$(".modal-close").addEventListener("click", closeModal);
+$("#modal-backdrop").addEventListener("click", (e) => {
+  if (e.target === $("#modal-backdrop")) closeModal();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
+});
+
+// ──────────────────────────────────────────────────────────────────────
+// 유틸
+// ──────────────────────────────────────────────────────────────────────
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// 초기화
+// ──────────────────────────────────────────────────────────────────────
+buildGroupFilters();
+render();
+</script>
+
+</body>
+</html>
