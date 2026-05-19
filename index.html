@@ -798,7 +798,7 @@ function openModal(id) {
   if (g.officialUrl) {
     sourceBtn = `<a href="${g.officialUrl}" target="_blank" rel="noopener" class="primary">↗ 공식 발행처에서 원문 보기</a>`;
   } else if (g.localPath) {
-    sourceBtn = `<a href="${g.localPath.split('/').map(s => encodeURIComponent(s)).join('/')}" target="_blank" rel="noopener" class="primary">📄 저장소 내 원본 보기 (${g.format})</a>`;
+    sourceBtn = `<a href="${g.localPath.normalize('NFC').split('/').map(s => encodeURIComponent(s)).join('/')}" target="_blank" rel="noopener" class="primary">📄 저장소 내 원본 보기 (${g.format})</a>`;
   } else {
     sourceBtn = `<a class="primary disabled">원본 링크 없음</a>`;
   }
