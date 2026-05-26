@@ -565,7 +565,7 @@ footer p { margin: 4px 0; }
     <button class="chip" data-year="2020-22">2020–22</button>
     <button class="chip" data-year="pre-2020">~2019</button>
   </div>
-  <div class="count-info" id="count-info">— / 47</div>
+  <div class="count-info" id="count-info">— / —</div>
 </div>
 
 <div class="compare-bar" id="compare-bar">
@@ -777,7 +777,7 @@ function renderCompare(entries) {
 
 function render() {
   const entries = filterEntries();
-  $("#count-info").textContent = `${entries.length} / 47`;
+  $("#count-info").textContent = `${entries.length} / ${window.GUIDELINES.length}`;
 
   if (state.view === "grid") renderGrid(entries);
   else if (state.view === "timeline") renderTimeline(entries);
