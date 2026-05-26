@@ -370,6 +370,81 @@ main.content {
   position: relative;
 }
 
+/* ── Translation notice banner ────────────────────────────────────── */
+.translation-notice {
+  max-width: var(--max-content);
+  margin: 24px auto 0;
+  padding: 0 28px;
+}
+.translation-notice details {
+  background: #fdf6e3;
+  border: 1px solid #d4c896;
+  border-left: 3px solid #b8902f;
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-size: 13.5px;
+  color: #5a4a20;
+  line-height: 1.65;
+}
+.translation-notice details[open] { padding-bottom: 18px; }
+.translation-notice summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3d2f0d;
+  user-select: none;
+}
+.translation-notice summary::-webkit-details-marker { display: none; }
+.translation-notice summary::before {
+  content: "ℹ︎";
+  color: #b8902f;
+  font-size: 16px;
+  font-weight: 700;
+}
+.translation-notice summary::after {
+  content: "▾";
+  margin-left: auto;
+  color: #b8902f;
+  transition: transform 0.2s;
+  font-size: 11px;
+}
+.translation-notice details[open] summary::after { transform: rotate(180deg); }
+.translation-notice .notice-body {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e6dcb3;
+}
+.translation-notice .notice-body p { margin: 6px 0; }
+.translation-notice .notice-body strong { color: #3d2f0d; }
+.translation-notice .prompt-block {
+  background: #fffaeb;
+  border: 1px solid #e6dcb3;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-family: 'EB Garamond', 'Noto Serif KR', Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #5a4a20;
+  line-height: 1.7;
+}
+.translation-notice .meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+  font-size: 12.5px;
+  color: #8a7333;
+}
+.translation-notice .meta-row span strong { color: #3d2f0d; }
+@media (max-width: 640px) {
+  .translation-notice { padding: 0 16px; }
+  .translation-notice details { padding: 12px 14px; font-size: 13px; }
+}
+
 /* ── Loading state ───────────────────────────────────────────────── */
 .loading {
   text-align: center;
@@ -454,6 +529,45 @@ footer p { margin: 6px 0; }
   <p class="doc-subtitle" id="doc-subtitle"></p>
   <p class="doc-byline" id="doc-byline"></p>
 </header>
+
+<div class="translation-notice" id="ko-only-notice">
+  <details open>
+    <summary>본 한국어본은 비공식 기계 번역입니다 — 공식 번역본 출간 시 대체 예정</summary>
+    <div class="notice-body">
+      <p>
+        이 페이지의 한국어 번역은 Anthropic <strong>Claude Code (Claude Opus 4.7 · 1M context)</strong> 모델이
+        아래 프롬프트에 따라 작성한 <strong>비공식 기계 번역</strong>입니다.
+        Vatican 공식 영문본(2026-05-15)을 원본으로, 챕터별로 7개의 에이전트가 병렬 번역한 결과를 후처리해
+        각주 마커와 회칙 인용 링크를 보존했습니다.
+      </p>
+      <div class="prompt-block">
+        “Vatican의 공식 영문 회칙 본문을 한국어로 번역하라.
+        한국 천주교 주교회의 출판물 수준의 신학적 정확성과 가독성을 갖출 것.
+        단락 번호와 각주 마커 [N]을 보존하고, 마크다운 구조(`##`, `_..._` 등)도 유지하라.
+        라틴어 회칙명은 첫 등장 시 한국어 의역을 병기하고
+        (예: <em>Rerum Novarum</em>(새로운 사태)), 이후엔 한국 천주교 표준 명칭을 사용하라
+        (예: 「새로운 사태」, 「찬미받으소서」, 「모든 형제들」).
+        성경 인용은 한국 천주교 표준 약어 표기로 변환(창세 11,1-9 등),
+        교황 인명·교회 문서명도 표준 한국어 표기를 따르라.
+        문체는 단정형 객관 서술체(“~한다 / ~이다”)로 통일하라.”
+      </div>
+      <p>
+        본 번역은 학술·연구·일반 독자의 이해를 돕기 위한 참고용입니다.
+        교회법적·전례적·교리적으로 정확한 인용이 필요한 경우, 반드시
+        <strong>한국 천주교 주교회의(CBCK)의 공식 한국어 번역본</strong>(추후 출간 예정) 또는
+        <a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html"
+           target="_blank" rel="noopener">Vatican의 공식 영문본</a>을 우선하여 참고하십시오.
+        공식 한국어 번역본이 출간되면 이 페이지는 그것으로 대체됩니다.
+      </p>
+      <div class="meta-row">
+        <span><strong>번역 도구</strong> · Claude Code (Opus 4.7, 1M context)</span>
+        <span><strong>원문</strong> · vatican.va, 2026-05-15</span>
+        <span><strong>번역 작업일</strong> · 2026-05-26</span>
+        <span><strong>본문 한국어</strong> · 약 139,000자 / 7개 챕터</span>
+      </div>
+    </div>
+  </details>
+</div>
 
 <div class="container">
   <aside class="toc" id="toc">
@@ -552,6 +666,9 @@ function render() {
   renderHeader();
   renderTOC();
   renderContent();
+  // 안내문: 한국어 모드에서만 표시
+  const notice = $("#ko-only-notice");
+  if (notice) notice.style.display = state.lang === "ko" ? "block" : "none";
   // 현재 활성 TOC 위치 (스크롤 시 업데이트)
   updateActiveTOC();
 }
