@@ -802,6 +802,12 @@ function openModal(id) {
     sourceBtn = `<a class="primary disabled">원본 링크 없음</a>`;
   }
 
+  // 한국어 전문 번역본 — 현재는 r29 (Magnifica Humanitas)만 제공
+  let translationBtn = "";
+  if (g.id === "r29") {
+    translationBtn = `<a href="magnifica.html" class="primary" style="background:#8b1e1e; border-color:#8b1e1e;">📖 한국어 전문 번역본 보기</a>`;
+  }
+
   content.innerHTML = `
     <div class="modal-head">
       <span class="card-cat ${g.category}">${g.group}</span>
@@ -814,6 +820,7 @@ function openModal(id) {
       </div>
     </div>
     <div class="modal-actions">
+      ${translationBtn}
       ${sourceBtn}
     </div>
     <div class="modal-body">${marked.parse(g.summary || "")}</div>

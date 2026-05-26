@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>위대한 인간성 (Magnifica Humanitas) — 레오 14세 교황 회칙</title>
+<meta name="description" content="레오 14세 교황의 첫 회칙 「위대한 인간성」(Magnifica Humanitas, 2026) — 인공지능 시대에 인격을 수호함에 관한 한국어·영어 전문.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<style>
+:root {
+  --bg: #fbfaf6;
+  --bg-aside: #f3f1e8;
+  --paper: #ffffff;
+  --ink: #1a1812;
+  --ink-soft: #4a463d;
+  --ink-mute: #8a8478;
+  --line: #e0dcd0;
+  --line-strong: #c8c2b2;
+  --accent: #6b4423;
+  --accent-soft: #ede5d4;
+  --vatican-red: #8b1e1e;
+  --max-content: 720px;
+  --aside-width: 280px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Top bar ──────────────────────────────────────────────────────── */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 28px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.topbar .brand {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+}
+.topbar .brand .latin {
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+  color: var(--ink-mute);
+  font-weight: 400;
+  margin-left: 6px;
+}
+.topbar .spacer { flex: 1; }
+.topbar a.home-link,
+.topbar a.source-link {
+  font-size: 13px;
+  color: var(--ink-soft);
+  padding: 6px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  background: white;
+  transition: border-color 0.15s;
+}
+.topbar a.home-link:hover,
+.topbar a.source-link:hover {
+  border-color: var(--ink);
+  text-decoration: none;
+}
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+}
+.lang-toggle button {
+  border: none;
+  background: transparent;
+  padding: 6px 14px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--ink-soft);
+  border-right: 1px solid var(--line);
+}
+.lang-toggle button:last-child { border-right: none; }
+.lang-toggle button.active {
+  background: var(--ink);
+  color: white;
+}
+.menu-toggle {
+  display: none;
+  background: white;
+  border: 1px solid var(--line-strong);
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--ink-soft);
+}
+
+/* ── Document header (회칙 표제) ──────────────────────────────────── */
+.doc-header {
+  max-width: var(--max-content);
+  margin: 60px auto 40px;
+  padding: 0 28px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 40px;
+}
+.doc-kind {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.doc-title {
+  font-family: 'EB Garamond', 'Noto Serif KR', serif;
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0 0 8px;
+  color: var(--vatican-red);
+  letter-spacing: -0.01em;
+}
+.doc-title-ko {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 22px;
+  color: var(--ink);
+}
+.doc-subtitle {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 15.5px;
+  color: var(--ink-soft);
+  font-weight: 400;
+  margin: 0 0 18px;
+  line-height: 1.5;
+}
+.doc-byline {
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin: 12px 0 0;
+}
+.doc-byline .sep { margin: 0 7px; opacity: 0.5; }
+
+/* ── Layout: aside + main ─────────────────────────────────────────── */
+.container {
+  display: grid;
+  grid-template-columns: var(--aside-width) 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 0 28px 80px;
+}
+
+aside.toc {
+  position: sticky;
+  top: 70px;
+  align-self: start;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  padding: 8px 12px 28px 0;
+  font-size: 13.5px;
+}
+aside.toc h3 {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-mute);
+  margin: 0 0 12px;
+  padding: 0 8px;
+}
+aside.toc ul { list-style: none; padding: 0; margin: 0; }
+aside.toc li { margin: 0; }
+aside.toc a {
+  display: block;
+  padding: 8px 12px;
+  color: var(--ink-soft);
+  border-left: 2px solid transparent;
+  line-height: 1.45;
+  transition: all 0.15s;
+}
+aside.toc a:hover { background: var(--accent-soft); text-decoration: none; }
+aside.toc a.active {
+  color: var(--ink);
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
+main.content {
+  min-width: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 50px 60px 80px;
+}
+
+/* ── Chapter content typography ───────────────────────────────────── */
+.chapter { margin-bottom: 60px; }
+.chapter:last-child { margin-bottom: 0; }
+
+.chapter > h2:first-child,
+.chapter-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--vatican-red);
+  margin: 50px 0 30px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--accent);
+  letter-spacing: -0.01em;
+}
+.chapter:first-child .chapter-title { margin-top: 0; }
+
+.body h2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--vatican-red);
+  margin: 48px 0 22px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--accent);
+}
+.body h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 36px 0 14px;
+}
+.body h4 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin: 28px 0 12px;
+  font-style: italic;
+}
+.body p {
+  font-family: 'Noto Serif KR', 'EB Garamond', serif;
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--ink);
+  margin: 0 0 18px;
+  text-align: justify;
+  text-justify: inter-word;
+  word-break: keep-all;
+}
+.body[data-lang="en"] p {
+  font-family: 'EB Garamond', 'Noto Serif KR', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.75;
+}
+.body em, .body i {
+  font-style: italic;
+}
+.body[data-lang="en"] em {
+  color: var(--accent);
+}
+.body strong { font-weight: 600; color: var(--ink); }
+.body blockquote {
+  border-left: 3px solid var(--line-strong);
+  padding-left: 20px;
+  margin: 22px 0;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.body ul, .body ol {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 28px;
+  margin: 12px 0 20px;
+}
+.body li { margin: 6px 0; }
+.body hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 36px auto;
+  width: 50%;
+}
+/* 각주 참조 [1], [2] 등 스타일 */
+.body p { word-spacing: 0.02em; }
+.body sup.fn-ref {
+  font-size: 0.7em;
+  vertical-align: super;
+  line-height: 0;
+  margin: 0 1px;
+}
+.body sup.fn-ref a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1px 3px;
+  border-radius: 2px;
+  transition: background 0.15s;
+}
+.body sup.fn-ref a:hover {
+  background: var(--accent-soft);
+}
+.body sup.fn-ref a:target,
+.body sup.fn-ref a.target-flash {
+  background: #fff3a8;
+}
+.body .fn-anchor {
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 6px;
+  scroll-margin-top: 80px;
+}
+.body .fn-anchor:target {
+  background: #fff3a8;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+/* 본문 외부 링크 (회칙·인명 등) */
+.body a:not(.fn-ref a):not(.home-link):not(.source-link) {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(107, 68, 35, 0.35);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.body a:not(.fn-ref a):hover {
+  text-decoration-color: var(--accent);
+}
+/* 각주 본문 영역 (07_footnotes 또는 결론 뒤) */
+.body[data-section="footnotes"] p,
+#fn-section p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 8px 0;
+}
+.fn-back {
+  font-size: 0.85em;
+  color: var(--ink-mute);
+  margin-left: 6px;
+  text-decoration: none;
+}
+.fn-back:hover { color: var(--accent); }
+
+/* 단락 번호 1., 2., 3. 처리: 본문 단락 시작의 숫자를 강조 */
+.body p {
+  position: relative;
+}
+
+/* ── Loading state ───────────────────────────────────────────────── */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-mute);
+  font-style: italic;
+}
+.lang-empty {
+  background: var(--accent-soft);
+  border: 1px dashed var(--line-strong);
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin: 24px 0;
+  color: var(--ink-soft);
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ── Footer ──────────────────────────────────────────────────────── */
+footer {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 40px 28px 60px;
+  font-size: 12.5px;
+  color: var(--ink-mute);
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+footer p { margin: 6px 0; }
+
+/* ── Mobile ──────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .container { grid-template-columns: 1fr; gap: 0; padding: 0 16px 80px; }
+  main.content { padding: 32px 22px 60px; }
+  .doc-title { font-size: 32px; }
+  .doc-title-ko { font-size: 21px; }
+  .doc-header { margin: 30px auto 28px; padding: 0 16px 28px; }
+  aside.toc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    background: var(--bg-aside);
+    padding: 70px 16px 28px;
+    z-index: 15;
+    transform: translateX(-100%);
+    transition: transform 0.25s;
+    max-height: none;
+  }
+  aside.toc.open { transform: translateX(0); box-shadow: 4px 0 24px rgba(0,0,0,0.12); }
+  .menu-toggle { display: inline-block; }
+  .body p { font-size: 16px; line-height: 1.8; }
+}
+@media (max-width: 480px) {
+  .topbar { padding: 10px 14px; gap: 8px; }
+  .topbar .brand { font-size: 13px; }
+  .doc-title { font-size: 26px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="topbar">
+  <button class="menu-toggle" id="menu-toggle" aria-label="목차 열기">☰ 목차</button>
+  <div class="brand">위대한 인간성<span class="latin">Magnifica Humanitas</span></div>
+  <div class="spacer"></div>
+  <div class="lang-toggle" role="tablist" aria-label="언어 전환">
+    <button data-lang="ko" class="active">한국어</button>
+    <button data-lang="en">English</button>
+  </div>
+  <a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html"
+     target="_blank" rel="noopener" class="source-link" title="Vatican 공식 원문">↗ 원문</a>
+  <a href="index.html" class="home-link">← 모음 홈</a>
+</nav>
+
+<header class="doc-header">
+  <div class="doc-kind">Encyclical Letter · 회칙</div>
+  <h1 class="doc-title" id="doc-title-latin">Magnifica Humanitas</h1>
+  <h2 class="doc-title-ko" id="doc-title-ko">위대한 인간성</h2>
+  <p class="doc-subtitle" id="doc-subtitle"></p>
+  <p class="doc-byline" id="doc-byline"></p>
+</header>
+
+<div class="container">
+  <aside class="toc" id="toc">
+    <h3>목차</h3>
+    <ul id="toc-list"></ul>
+  </aside>
+
+  <main class="content">
+    <div id="content" class="loading">번역본을 불러오는 중…</div>
+  </main>
+</div>
+
+<footer>
+  <p>본 한국어 번역은 본 저장소의 자체 번역입니다 — 공식 한국어 번역본이 출간되면 그것을 우선 참고하십시오.</p>
+  <p>원문: <a href="https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html" target="_blank" rel="noopener">vatican.va 공식 영문본</a></p>
+</footer>
+
+<script src="magnifica_data.js"></script>
+<script>
+const $ = (sel) => document.querySelector(sel);
+const $$ = (sel) => Array.from(document.querySelectorAll(sel));
+
+const state = {
+  lang: localStorage.getItem("magnifica.lang") || "ko",
+};
+
+function renderHeader() {
+  const m = window.MAGNIFICA.meta;
+  $("#doc-subtitle").textContent = state.lang === "ko" ? m.subtitleKo : m.subtitleEn;
+  $("#doc-byline").innerHTML = [
+    m.author,
+    `서명 ${m.signedDate}`,
+    m.docType,
+  ].join('<span class="sep">·</span>');
+}
+
+function renderTOC() {
+  const list = $("#toc-list");
+  list.innerHTML = window.MAGNIFICA.chapters
+    .map((c) => `
+      <li><a href="#${c.id}" data-id="${c.id}">${state.lang === "ko" ? c.titleKo : c.titleEn}</a></li>
+    `)
+    .join("");
+}
+
+function renderContent() {
+  const content = $("#content");
+  content.classList.remove("loading");
+  content.innerHTML = window.MAGNIFICA.chapters
+    .map((c) => {
+      let md;
+      let fallbackNote = "";
+      if (state.lang === "ko") {
+        // 한국어 모드: 번역이 부실하면(미번역 placeholder, 500자 미만) 영문 폴백
+        if (c.contentKo.length < 500) {
+          md = c.contentEn;
+          fallbackNote = `<div class="lang-empty">「${c.titleKo}」 — 이 섹션은 본문 인용 출처 모음입니다. 분량과 정확성을 위해 영문 원문을 그대로 표시합니다.</div>`;
+        } else {
+          md = c.contentKo;
+        }
+      } else {
+        md = c.contentEn;
+      }
+      const html = marked.parse(md);
+      const isFootnotes = c.id === "07_footnotes";
+      return `
+        <section class="chapter" id="${c.id}">
+          <h2 class="chapter-title">${state.lang === "ko" ? c.titleKo : c.titleEn}</h2>
+          ${fallbackNote}
+          <div class="body${isFootnotes ? " body-footnotes" : ""}" data-lang="${state.lang}" ${isFootnotes ? 'data-section="footnotes"' : ""}>
+            ${html}
+          </div>
+        </section>
+      `;
+    })
+    .join("");
+  // 각주 클릭 시 부드러운 스크롤 + 하이라이트
+  $$("sup.fn-ref a, .fn-anchor").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      const href = el.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        const target = document.getElementById(href.slice(1));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "center" });
+          target.style.background = "#fff3a8";
+          setTimeout(() => { target.style.background = ""; }, 1400);
+        }
+      }
+    });
+  });
+}
+
+function render() {
+  document.documentElement.lang = state.lang === "ko" ? "ko" : "en";
+  renderHeader();
+  renderTOC();
+  renderContent();
+  // 현재 활성 TOC 위치 (스크롤 시 업데이트)
+  updateActiveTOC();
+}
+
+// 언어 토글
+$$(".lang-toggle button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.classList.contains("active")) return;
+    $$(".lang-toggle button").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    state.lang = btn.dataset.lang;
+    localStorage.setItem("magnifica.lang", state.lang);
+    // 현재 스크롤 챕터 기억해서 재렌더 후 복원
+    const currentChapter = getCurrentChapterId();
+    render();
+    if (currentChapter) {
+      const el = document.getElementById(currentChapter);
+      if (el) el.scrollIntoView({ block: "start", behavior: "instant" });
+    }
+  });
+});
+
+// 초기 활성 언어 버튼
+document.addEventListener("DOMContentLoaded", () => {
+  $$(".lang-toggle button").forEach((b) =>
+    b.classList.toggle("active", b.dataset.lang === state.lang)
+  );
+});
+
+// 메뉴 토글 (모바일)
+$("#menu-toggle").addEventListener("click", () => {
+  $("#toc").classList.toggle("open");
+});
+document.addEventListener("click", (e) => {
+  const toc = $("#toc");
+  if (!toc.contains(e.target) && !$("#menu-toggle").contains(e.target)) {
+    toc.classList.remove("open");
+  }
+});
+
+// 스크롤에 따른 TOC 하이라이트
+function getCurrentChapterId() {
+  const chapters = $$("section.chapter");
+  const offset = 120;
+  let current = chapters[0]?.id;
+  for (const ch of chapters) {
+    if (ch.getBoundingClientRect().top <= offset) {
+      current = ch.id;
+    }
+  }
+  return current;
+}
+function updateActiveTOC() {
+  const current = getCurrentChapterId();
+  $$("#toc-list a").forEach((a) => {
+    a.classList.toggle("active", a.dataset.id === current);
+  });
+}
+let scrollPending = false;
+window.addEventListener("scroll", () => {
+  if (scrollPending) return;
+  scrollPending = true;
+  requestAnimationFrame(() => {
+    updateActiveTOC();
+    scrollPending = false;
+  });
+});
+
+// 초기화
+if (window.MAGNIFICA) {
+  render();
+} else {
+  $("#content").innerHTML = "<p>데이터 로딩 실패. magnifica_data.js를 확인해 주세요.</p>";
+}
+</script>
+
+</body>
+</html>
