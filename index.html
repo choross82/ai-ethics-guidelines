@@ -898,7 +898,7 @@ $("#group-filters").addEventListener("click", (e) => {
 $("#year-filters").addEventListener("click", (e) => {
   const chip = e.target.closest("[data-year]");
   if (!chip) return;
-  $("#year-filters [data-year]").forEach((button) => button.classList.remove("active"));
+  $$("#year-filters [data-year]").forEach((button) => button.classList.remove("active"));
   chip.classList.add("active");
   state.year = chip.dataset.year;
   render();
