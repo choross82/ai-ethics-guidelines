@@ -34,10 +34,12 @@ NATIONAL_META = {
         "shortDesc": "정부 간 최초의 AI 원칙. G20·EU 정책의 기반이 됨."
     },
     "03": {
-        "group": "유럽연합", "country": "EU", "year": 2024,
-        "officialUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689",
-        "tags": ["법률", "위험기반", "규제"],
-        "shortDesc": "세계 최초의 포괄적 AI 규제 법률, 위험기반 4단계 분류."
+        "year": 2024,
+        "group": "유럽연합",
+        "country": "EU",
+        "officialUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27",
+        "tags": ["법률","위험기반","규제"],
+        "shortDesc": "위험 기반 EU AI 규제. 2026년 개정 통합본과 단계별 적용 일정을 반영했다.",
     },
     "04": {
         "group": "미국", "country": "미국", "year": 2023,
@@ -118,10 +120,12 @@ NATIONAL_META = {
         "shortDesc": "세계 최초의 법적 구속력 있는 국제 AI 조약."
     },
     "17": {
-        "group": "일본", "country": "일본", "year": 2024,
-        "officialUrl": "https://www.soumu.go.jp/main_content/000943079.pdf",
-        "tags": ["사업자", "가이드라인", "통합"],
-        "shortDesc": "일본 AI 사업자 대상 통합 가이드라인 v1.0."
+        "year": 2026,
+        "group": "일본",
+        "country": "일본",
+        "officialUrl": "https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html",
+        "tags": ["사업자","가이드라인","통합"],
+        "shortDesc": "일본 총무성·경제산업성의 AI 사업자 지침 제1.2판. 본문·부속서·체크리스트를 제공한다.",
     },
     "18": {
         "group": "다자", "country": "다자", "year": 2019,
@@ -134,6 +138,96 @@ NATIONAL_META = {
         "officialUrl": "https://algorithmwatch.org/de/wp-content/uploads/2019/03/IEEE-EAD1e.pdf",
         "tags": ["엔지니어링", "설계지침", "표준화"],
         "shortDesc": "엔지니어링 표준화 단체의 가장 방대한 AI 윤리 설계 지침(294페이지)."
+    },
+    "20": {
+        "year": 2026,
+        "group": "한국",
+        "country": "한국",
+        "officialUrl": "https://www.law.go.kr/법령/인공지능발전과신뢰기반조성등에관한기본법",
+        "tags": ["인공지능기본법","투명성","고영향AI"],
+        "shortDesc": "한국 AI 기본법과 시행령의 적용 구조, 투명성과 고영향 AI 의무를 안내한다.",
+        "format": "HTML",
+    },
+    "21": {
+        "year": 2026,
+        "group": "한국",
+        "country": "한국",
+        "officialUrl": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156740669",
+        "tags": ["투명성","생성물표시","사전고지"],
+        "shortDesc": "AI 기본법의 사전 고지와 생성물 표시 기준을 설명하는 실무 안내서.",
+        "format": "HTML",
+    },
+    "22": {
+        "year": 2026,
+        "group": "싱가포르",
+        "country": "싱가포르",
+        "officialUrl": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2026/updated-model-ai-governance-framework-for-agentic-ai",
+        "tags": ["AI에이전트","인간감독","거버넌스"],
+        "shortDesc": "AI 에이전트의 권한과 책임, 배포 전후 위험관리를 다룬다.",
+        "format": "HTML",
+    },
+    "23": {
+        "year": 2026,
+        "group": "다자",
+        "country": "인도",
+        "officialUrl": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&lang=2&reg=48",
+        "tags": ["국제협력","접근성","포용성"],
+        "shortDesc": "AI 자원 접근성, 신뢰성, 에너지 효율 등을 국제 협력 의제로 제시한다.",
+        "format": "HTML",
+    },
+    "24": {
+        "year": 2026,
+        "group": "중국",
+        "country": "중국",
+        "officialUrl": "https://wap.miit.gov.cn/jgsj/kjs/wjfb/art/2026/art_2995f16b28504ddcbb604e918eb15759.html",
+        "tags": ["윤리심사","연구윤리","위험관리"],
+        "shortDesc": "AI 연구·개발 과정의 윤리 심사와 위험 점검을 구체화한다.",
+        "format": "HTML",
+    },
+    "25": {
+        "year": 2026,
+        "group": "국제기구",
+        "country": "국제",
+        "officialUrl": "https://unesdoc.unesco.org/ark:/48223/pf0000399378",
+        "tags": ["UNESCO","준비도평가","정책이행"],
+        "shortDesc": "국가별 AI 윤리 제도와 역량을 진단해 정책 개선의 우선순위를 정하는 도구.",
+        "format": "HTML",
+    },
+    "26": {
+        "year": 2026,
+        "group": "국제기구",
+        "country": "국제",
+        "officialUrl": "https://www.unesco.org/ethics-ai/en/ai-environment-ecosystems-toolkit",
+        "tags": ["환경","생태계","지속가능성"],
+        "shortDesc": "AI의 환경적 비용과 생태계에 대한 편익을 정책에서 함께 평가하도록 돕는다.",
+        "format": "HTML",
+    },
+    "27": {
+        "year": 2026,
+        "group": "국제기구",
+        "country": "유럽",
+        "officialUrl": "https://www.coe.int/en/web/artificial-intelligence/huderia-risk-and-impact-assessment-of-ai-systems",
+        "tags": ["위험평가","인권","이해관계자"],
+        "shortDesc": "AI 사용 맥락과 설계·배포 정보를 바탕으로 인권·민주주의·법치 위험을 평가한다.",
+        "format": "HTML",
+    },
+    "28": {
+        "year": 2026,
+        "group": "G7",
+        "country": "국제",
+        "officialUrl": "https://www.meti.go.jp/press/2026/06/20260602005/20260602005-a.pdf",
+        "tags": ["G7","히로시마AI프로세스","AI거버넌스"],
+        "shortDesc": "히로시마 AI 프로세스와 이어지는 G7 디지털·기술 장관들의 2026년 합의.",
+        "format": "PDF",
+    },
+    "29": {
+        "year": 2026,
+        "group": "미국",
+        "country": "미국",
+        "officialUrl": "https://www.whitehouse.gov/wp-content/uploads/2026/06/eo-14409.pdf",
+        "tags": ["행정명령","AI안보","혁신"],
+        "shortDesc": "첨단 AI에 대비한 미국 연방의 혁신·안보 정책을 다룬다.",
+        "format": "PDF",
     },
 }
 
@@ -217,10 +311,12 @@ RELIGIOUS_META = {
         "shortDesc": "2024 PCUSA 총회 결의에 따른 공식 후속 작업 보고."
     },
     "14": {
-        "group": "장로교", "tradition": "장로교", "year": 2023,
-        "officialUrl": "",
-        "tags": ["예장통합", "한국", "목회자윤리"],
-        "shortDesc": "한국 주요 교단 차원의 첫 AI 목회 윤리 선언(제108회기 정책기획및기구개혁위원회)."
+        "year": 2024,
+        "group": "장로교",
+        "tradition": "장로교",
+        "officialUrl": "https://new.pck.or.kr/bbs/board.php?bo_table=SM04_02&wr_id=122",
+        "tags": ["예장통합","한국","목회자윤리"],
+        "shortDesc": "예장통합 제109회 총회가 2024년 채택한 사회 및 목회자 대상 AI 윤리 선언.",
     },
     "15": {
         "group": "성공회", "tradition": "성공회", "year": 2024,
@@ -306,6 +402,97 @@ RELIGIOUS_META = {
         "tags": ["로마콜", "생성형AI", "다종교"],
         "shortDesc": "Rome Call을 생성형 AI 시대에 맞춰 업데이트한 다종교 부속서."
     },
+    "29": {
+        "year": 2026,
+        "group": "가톨릭",
+        "tradition": "가톨릭",
+        "officialUrl": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+        "tags": ["회칙","인간존엄","공동선","AI무장해제","사회교리","위대한 인간성"],
+        "shortDesc": "인공지능 시대 인간 보호에 관한 레오 14세의 첫 회칙. 공식 한국어판 제목은 「고귀한 인류」다.",
+        "format": "HTML",
+    },
+    "30": {
+        "year": 2026,
+        "group": "성공회",
+        "tradition": "성공회",
+        "officialUrl": "https://www.churchofengland.org/sites/default/files/2026-11/Practical-guide-to-AI---Oct-2026.pdf",
+        "tags": ["교회운영","개인정보","검증","목회"],
+        "shortDesc": "교회 사역에서 AI 답변 검증, 개인정보 보호, 사람의 판단을 안내하는 실무 가이드.",
+        "format": "PDF",
+    },
+    "31": {
+        "year": 2026,
+        "group": "장로교",
+        "tradition": "장로교",
+        "officialUrl": "https://pcusa.org/resource/algorithm-and-almighty",
+        "tags": ["개혁신학","설교","공개","책임"],
+        "shortDesc": "하나님의 형상과 청지기직에 근거해 교단 기관과 지도자의 AI 사용 원칙을 제시한다.",
+        "format": "HTML",
+    },
+    "32": {
+        "year": 2026,
+        "group": "장로교",
+        "tradition": "장로교",
+        "officialUrl": "https://pcusa.org/resource/sample-ai-policy-congregations-and-mid-councils",
+        "tags": ["당회","노회","개인정보","정책예시"],
+        "shortDesc": "교회와 중간 치리회가 자체 AI 정책에 활용할 수 있는 예시와 운영 방안을 제시한다.",
+        "format": "HTML",
+    },
+    "33": {
+        "year": 2026,
+        "group": "에큐메니컬",
+        "tradition": "초교파 기독교",
+        "officialUrl": "https://aichristian.org/guidelines/",
+        "tags": ["사역","공동체분별","실무","AI정책"],
+        "shortDesc": "교회가 AI 도입을 함께 논의하도록 사용 지침과 교회 입장문 양식을 제공한다.",
+        "format": "HTML",
+    },
+    "34": {
+        "year": 2026,
+        "group": "가톨릭",
+        "tradition": "가톨릭",
+        "officialUrl": "https://www.vatican.va/content/leo-xiv/en/messages/communications/documents/20260124-messaggio-comunicazioni-sociali.html",
+        "tags": ["합성미디어","음성","인간관계","미디어교육"],
+        "shortDesc": "AI가 인간의 얼굴과 목소리를 모방하는 시대에 인격적 관계와 소통을 지키자고 촉구한다.",
+        "format": "HTML",
+    },
+    "35": {
+        "year": 2026,
+        "group": "장로교",
+        "tradition": "장로교",
+        "tags": ["예장합동","설교","목양","원문미확인"],
+        "shortDesc": "개혁주의 신학에 근거한 목회 AI 원칙. 총회 채택 보도를 바탕으로 정리했다.",
+        "format": "HTML",
+        "referenceUrl": "https://www.christiandaily.co.kr/news/164152",
+        "sourceLabel": "총회 채택 보도 보기",
+    },
+    "36": {
+        "year": 2025,
+        "group": "이슬람",
+        "tradition": "이슬람",
+        "officialUrl": "https://iifa-aifi.org/en/56025.html",
+        "tags": ["이슬람법","결의","해악방지","투명성"],
+        "shortDesc": "이슬람 법학의 틀에서 AI의 개발·사용에 적용할 조건을 제시한다.",
+        "format": "HTML",
+    },
+    "37": {
+        "year": 2026,
+        "group": "초종교",
+        "tradition": "종교 간 대화",
+        "officialUrl": "https://unidir.org/publication/faith-based-perspectives-on-ai-security-and-ethics-reflections-from-an-interfaith-dialogue/",
+        "tags": ["초종교","인간존엄","책임","평화"],
+        "shortDesc": "종교 간 대화에서 논의된 인간 존엄과 책임, AI 거버넌스의 공통 과제를 정리한다.",
+        "format": "HTML",
+    },
+    "38": {
+        "year": 2025,
+        "group": "유대교",
+        "tradition": "유대교",
+        "officialUrl": "https://www.rabbinicalassembly.org/about-us/ethics/code-conduct/code-conduct-section",
+        "tags": ["유대교","표절","진실성","윤리강령"],
+        "shortDesc": "랍비의 저작·업무에서 AI 오용이 표절과 기만으로 이어질 수 있음을 짚는다.",
+        "format": "HTML",
+    },
 }
 
 
@@ -342,14 +529,13 @@ def find_doc_file(folder: Path) -> tuple[str, str, int]:
     """폴더 내에서 PDF/HTML 원본 파일을 찾아 (파일명, 형식, 크기) 반환."""
     candidates = []
     for f in folder.iterdir():
-        if f.is_file() and f.name != "요약.md" and not f.name.startswith("."):
+        if f.is_file() and f.suffix.lower() in {".pdf", ".html"} and not f.name.startswith("."):
             candidates.append(f)
     if not candidates:
         return ("", "", 0)
     # PDF 우선
     pdfs = [f for f in candidates if f.suffix.lower() == ".pdf"]
-    htmls = [f for f in candidates if f.suffix.lower() == ".html"]
-    chosen = pdfs[0] if pdfs else (htmls[0] if htmls else candidates[0])
+    chosen = sorted(pdfs or candidates)[0]
     fmt = chosen.suffix[1:].upper()
     return (chosen.name, fmt, chosen.stat().st_size)
 
@@ -390,12 +576,13 @@ def build_entry(folder: Path, category: str, meta_map: dict) -> dict | None:
         "tradition": meta.get("tradition", ""),
         "tags": meta["tags"],
         "shortDesc": meta["shortDesc"],
-        "format": fmt,
+        "format": fmt or meta.get("format", ""),
         "fileSize": size,
         "folderPath": rel_folder,
         "documentFile": doc_file,
         "localPath": local_path,
         "officialUrl": meta.get("officialUrl", ""),
+        **({key: meta[key] for key in ("referenceUrl", "sourceLabel") if key in meta}),
         "summary": parsed["raw"],
     }
 

@@ -1,113 +1,91 @@
 # AI 윤리 가이드라인 모음
 
-국가·국제기구와 종교 단체가 발표한 주요 AI 윤리 가이드라인 원문 및 한국어 요약을 정리한 자료실.
+국가·국제기구·비정부 단체와 교단·종교계가 발표한 AI 윤리 문서의 한국어 요약과 출처를 정리한 자료실.
 
-수집일: 2026-05-11 | 총 47건 (국가기관 19 + 교단별 28)
+자료 확인 기준일 **2026-11-11** · 총 **67건** (국가·국제기구 등 29건, 교단·종교계 38건)
 
----
+[공개 사이트](https://choross82.github.io/ai-ethics-guidelines/)
 
-## 구성
-
-### [국가기관별 AI 윤리 가이드라인](국가기관별%20AI%20윤리%20가이드라인/) (19건)
-
-각국 정부, 국제기구, 주요 단체가 발표한 비종교 AI 윤리 가이드라인.
+## [국가·국제기구·비정부 자료](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/)
 
 | # | 문서 | 발행 주체 | 연도 | 성격 |
-|---|------|----------|------|------|
-| 01 | UNESCO AI 윤리 권고 | UNESCO (193개국) | 2021 | 국제 권고 |
-| 02 | OECD AI 원칙 | OECD | 2019/2024 | 국제 원칙 |
-| 03 | EU AI Act | 유럽연합 | 2024 | 법률 |
-| 04 | NIST AI 위험관리 프레임워크 | 미국 NIST | 2023 | 프레임워크 |
-| 05 | AI 권리장전 청사진 | 미국 백악관 OSTP | 2022 | 정책 청사진 |
-| 06 | 바이든 AI 행정명령 14110 | 미국 대통령 | 2023 | 행정명령 |
-| 07 | 블레츨리 선언 | 영국 (28개국+EU) | 2023 | 국제 선언 |
-| 08 | G7 히로시마 AI 행동강령 | G7 | 2023 | 자발적 강령 |
-| 09 | 사람이 중심이 되는 AI 윤리기준 | 한국 과기정통부 | 2020 | 윤리기준 |
-| 10 | 생성형 AI 개인정보 처리 안내서 | 한국 개인정보보호위원회 | 2025 | 안내서 |
-| 11 | 新一代人工智能伦理规范 | 중국 과학기술부 | 2021 | 윤리 규범 |
-| 12 | 생성형 AI 거버넌스 프레임워크 | 싱가포르 IMDA | 2024 | 거버넌스 |
-| 13 | Asilomar AI 원칙 | Future of Life Institute | 2017 | 원칙 선언 |
-| 14 | 몬트리올 선언 | Universite de Montreal | 2018 | 원칙 선언 |
-| 15 | AI 보건 윤리·거버넌스 | WHO | 2021 | 가이드라인 |
-| 16 | AI 기본협약 (CETS 225) | 유럽평의회 | 2024 | 국제 조약 |
-| 17 | AI 사업자 가이드라인 | 일본 총무성·경산성 | 2024 | 가이드라인 |
-| 18 | G20 AI 원칙 | G20 | 2019 | 국제 원칙 |
-| 19 | Ethically Aligned Design | IEEE | 2019 | 설계 지침 |
+|---|---|---|---|---|
+| 01 | [UNESCO 인공지능 윤리 권고](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/01_UNESCO_AI%EC%9C%A4%EB%A6%AC%EA%B6%8C%EA%B3%A0_2021/요약.md) | UNESCO (유엔교육과학문화기구) | 2021 |권고 (Recommendation) |
+| 02 | [OECD 인공지능 권고](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/02_OECD_AI%EC%9B%90%EC%B9%99_2019_2024/요약.md) | OECD (경제협력개발기구) | 2019 / 2024 |권고 (Recommendation, OECD/LEGAL/0449) |
+| 03 | [EU 인공지능법 (AI Act)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/03_EU_AI%20Act_2024/요약.md) | 유럽의회 및 유럽이사회 (European Parliament and Council of the EU) | 2024 |법률 (Regulation, 직접 적용 법규) |
+| 04 | [NIST 인공지능 위험관리 프레임워크 (AI RMF 1.0)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/04_%EB%AF%B8%EA%B5%AD_NIST_AI%EC%9C%84%ED%97%98%EA%B4%80%EB%A6%AC%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC_2023/요약.md) | 미국 국립표준기술연구소 (NIST, National Institute of Standards and Technology) | 2023 |프레임워크 (자발적 지침) |
+| 05 | [미국 AI 권리장전 청사진](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/05_%EB%AF%B8%EA%B5%AD_AI%EA%B6%8C%EB%A6%AC%EC%9E%A5%EC%A0%84%EC%B2%AD%EC%82%AC%EC%A7%84_2022/요약.md) | 미국 백악관 과학기술정책실 (White House Office of Science and Technology Policy, OSTP) | 2022 |프레임워크 (비구속적 백서) |
+| 06 | [미국 바이든 대통령 AI 행정명령 (EO 14110)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/06_%EB%AF%B8%EA%B5%AD_%EB%B0%94%EC%9D%B4%EB%93%A0_AI%ED%96%89%EC%A0%95%EB%AA%85%EB%A0%B9_2023/요약.md) | 미국 대통령 (조 바이든) | 2023 |행정명령 (Executive Order 14110) |
+| 07 | [블레츨리 선언 (The Bletchley Declaration)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/07_%EC%98%81%EA%B5%AD_%EB%B8%94%EB%A0%88%EC%B8%A8%EB%A6%AC%EC%84%A0%EC%96%B8_2023/요약.md) | AI 안전 정상회의 참가국 (29개국 및 EU) | 2023 |선언 (Declaration) |
+| 08 | [G7 히로시마 AI 프로세스 국제행동강령](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/08_G7_%ED%9E%88%EB%A1%9C%EC%8B%9C%EB%A7%88_AI%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_2023/요약.md) | G7 (캐나다, 프랑스, 독일, 이탈리아, 일본, 영국, 미국 + EU) | 2023 |행동강령 (Code of Conduct, 자발적 지침) |
+| 09 | [사람이 중심이 되는 인공지능(AI) 윤리기준](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/09_%ED%95%9C%EA%B5%AD_AI%EC%9C%A4%EB%A6%AC%EA%B8%B0%EC%A4%80_2020/요약.md) | 대한민국 관계부처 합동 (과학기술정보통신부 주관) | 2020 |윤리기준 (자율규제 가이드라인) |
+| 10 | [생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/10_%ED%95%9C%EA%B5%AD_%EC%83%9D%EC%84%B1%ED%98%95AI%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/요약.md) | 대한민국 개인정보보호위원회 (PIPC, Personal Information Protection Commission) | 2025 |가이드라인 (안내서) |
+| 11 | [신세대 인공지능 윤리규범 (新一代人工智能伦理规范)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/11_%EC%A4%91%EA%B5%AD_AI%EC%9C%A4%EB%A6%AC%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4/요약.md) | 중국 국가신세대인공지능거버넌스전문위원회 (国家新一代人工智能治理专业委员会), 과학기술부(科技部) | 2021 |윤리규범 (가이드라인) |
+| 12 | [생성형 AI를 위한 모델 AI 거버넌스 프레임워크](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/12_%EC%8B%B1%EA%B0%80%ED%8F%AC%EB%A5%B4_%EB%AA%A8%EB%8D%B8AI%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4/요약.md) | 싱가포르 정보통신미디어개발청 (IMDA) 및 AI Verify Foundation | 2024 |거버넌스 프레임워크 |
+| 13 | [아실로마 AI 원칙](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/13_%EC%95%84%EC%8B%A4%EB%A1%9C%EB%A7%88_AI%EC%9B%90%EC%B9%99_2017/요약.md) | 미래생명연구소 (Future of Life Institute, FLI), 2017 Beneficial AI 컨퍼런스 참가자 | 2017 |원칙 선언 (공개서한) |
+| 14 | [몬트리올 책임있는 AI 개발 선언](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/14_%EB%AA%AC%ED%8A%B8%EB%A6%AC%EC%98%AC%EC%84%A0%EC%96%B8_2018/요약.md) | 몬트리올대학교 (Universite de Montreal) 및 다수의 시민, 전문가, 공공기관, 산업계, 시민단체 참여 | 2018 |선언 (Declaration) |
+| 15 | [WHO 보건 분야 인공지능의 윤리와 거버넌스 지침](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/15_WHO_AI%EB%B3%B4%EA%B1%B4%EC%9C%A4%EB%A6%AC_2021/요약.md) | 세계보건기구 (WHO, World Health Organization) | 2021 |지침 (Guidance) |
+| 16 | [유럽평의회 인공지능과 인권, 민주주의, 법치에 관한 기본협약](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/16_%EC%9C%A0%EB%9F%BD%ED%8F%89%EC%9D%98%ED%9A%8C_AI%EA%B8%B0%EB%B3%B8%ED%98%91%EC%95%BD_2024/요약.md) | 유럽평의회 (Council of Europe) | 2024 |국제협약 (조약, CETS No. 225) |
+| 17 | [일본 AI 사업자 가이드라인 제1.2판](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/17_%EC%9D%BC%EB%B3%B8_AI%EC%82%AC%EC%97%85%EC%9E%90%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8_2024/요약.md) | 일본 총무성 (総務省) 및 경제산업성 (経済産業省) | 2026 |가이드라인 (비구속적 소프트로) |
+| 18 | [G20 AI 원칙](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/18_G20_AI%EC%9B%90%EC%B9%99_2019/요약.md) | G20 (주요 20개국 정상회의), 2019년 일본 의장국 주도 | 2019 |비구속적 원칙 (Non-binding Principles) |
+| 19 | [IEEE 윤리적 정렬 설계 제1판 (Ethically Aligned Design, First Edition)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/19_IEEE_%EC%9C%A4%EB%A6%AC%EC%A0%81%EC%A0%95%EB%A0%AC%EC%84%A4%EA%B3%84/요약.md) | IEEE 자율지능시스템 윤리에 관한 글로벌 이니셔티브 (The IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems) | 2019 |프레임워크 및 권고 보고서 |
+| 20 | [대한민국 인공지능기본법과 시행령](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/20_%ED%95%9C%EA%B5%AD_%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EA%B8%B0%EB%B3%B8%EB%B2%95_2026/요약.md) | 대한민국 | 2026 |법률 및 대통령령 |
+| 21 | [인공지능 투명성 확보 가이드라인](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/21_%ED%95%9C%EA%B5%AD_%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5_%ED%88%AC%EB%AA%85%EC%84%B1_%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8_2026/요약.md) | 과학기술정보통신부 | 2026 |실무 가이드라인 |
+| 22 | [싱가포르 에이전트형 AI 거버넌스 프레임워크](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/22_%EC%8B%B1%EA%B0%80%ED%8F%AC%EB%A5%B4_%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%ED%98%95AI_%EA%B1%B0%EB%B2%84%EB%84%8C%EC%8A%A4_2026/요약.md) | 싱가포르 정보통신미디어개발청(IMDA) | 2026 |거버넌스 프레임워크 |
+| 23 | [뉴델리 AI 영향 정상회의 선언](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/23_%EB%89%B4%EB%8D%B8%EB%A6%AC_AI%EC%98%81%ED%96%A5%EC%A0%95%EC%83%81%ED%9A%8C%EC%9D%98_%EC%84%A0%EC%96%B8_2026/요약.md) | AI Impact Summit 참가국 및 국제기구 | 2026 |국제 선언 |
+| 24 | [중국 인공지능 과학기술 윤리 심사 및 서비스 방법(시범 시행)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/24_%EC%A4%91%EA%B5%AD_AI%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EC%9C%A4%EB%A6%AC%EC%8B%AC%EC%82%AC_2026/요약.md) | 중국 공업정보화부 등 10개 기관 | 2026 |행정 규범 문서(시행) |
+| 25 | [UNESCO AI 윤리 준비도 평가 방법론 2.0 (RAM 2.0)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/25_UNESCO_%EC%9C%A4%EB%A6%AC%EC%A4%80%EB%B9%84%EB%8F%84%ED%8F%89%EA%B0%80_RAM2_2026/요약.md) | UNESCO | 2026 |정책 이행 평가 도구 |
+| 26 | [UNESCO AI·환경·생태계 정책 도구](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/26_UNESCO_AI%EC%99%80%ED%99%98%EA%B2%BD_%EC%A0%95%EC%B1%85%EB%8F%84%EA%B5%AC_2026/요약.md) | UNESCO | 2026 |정책 도구 |
+| 27 | [유럽평의회 AI 위험·영향 평가 도구 HUDERIA / COBRA](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/27_%EC%9C%A0%EB%9F%BD%ED%8F%89%EC%9D%98%ED%9A%8C_HUDERIA_COBRA_2026/요약.md) | 유럽평의회 각료위원회 | 2026 |비구속적 위험·영향 평가 지침 |
+| 28 | [G7 디지털·기술 장관 선언(파리)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/28_G7_%EB%94%94%EC%A7%80%ED%84%B8%EA%B8%B0%EC%88%A0%EC%9E%A5%EA%B4%80%EC%84%A0%EC%96%B8_2026/요약.md) | G7 디지털·기술 장관 | 2026 |장관 선언 |
+| 29 | [미국 첨단 AI 혁신·안보 행정명령 (EO 14409)](%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B4%80%EB%B3%84%20AI%20%EC%9C%A4%EB%A6%AC%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/29_%EB%AF%B8%EA%B5%AD_%EC%B2%A8%EB%8B%A8AI_%EC%95%88%EB%B3%B4_%ED%96%89%EC%A0%95%EB%AA%85%EB%A0%B9_2026/요약.md) | 미국 대통령 | 2026 |행정명령 |
 
----
+## [교단·종교계 자료](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/)
 
-### [교단별 AI 가이드라인](교단별%20AI%20가이드라인/) (28건)
+| # | 문서 | 발행 주체 | 연도 | 성격 |
+|---|---|---|---|---|
+| 01 | [Rome Call for AI Ethics (2020) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/01_%EA%B0%80%ED%86%A8%EB%A6%AD_%EA%B5%90%ED%99%A9%EC%B2%AD%EC%83%9D%EB%AA%85%ED%95%99%EC%88%A0%EC%9B%90_%EB%A1%9C%EB%A7%88%EC%BD%9C_2020/요약.md) | 교황청 생명학술원 (Pontifical Academy for Life) | 2020 |윤리 서약서 / 공동 선언문 |
+| 02 | [제57차 세계 평화의 날 교황 메시지 (2024) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/02_%EA%B0%80%ED%86%A8%EB%A6%AD_%ED%94%84%EB%9E%80%EC%B9%98%EC%8A%A4%EC%BD%94%EA%B5%90%ED%99%A9_%EC%84%B8%EA%B3%84%ED%8F%89%ED%99%94%EC%9D%98%EB%82%A0%EB%A9%94%EC%8B%9C%EC%A7%80_2024/요약.md) | 교황청 / 프란치스코 교황 | 2024 |교황 메시지 |
+| 03 | [제58차 세계 홍보의 날 교황 메시지 (2024) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/03_%EA%B0%80%ED%86%A8%EB%A6%AD_%ED%94%84%EB%9E%80%EC%B9%98%EC%8A%A4%EC%BD%94%EA%B5%90%ED%99%A9_%EC%84%B8%EA%B3%84%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98%EC%9D%98%EB%82%A0%EB%A9%94%EC%8B%9C%EC%A7%80_2024/요약.md) | 교황청 / 프란치스코 교황 | 2024 |교황 메시지 |
+| 04 | [프란치스코 교황 G7 정상회의 AI 연설 (2024) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/04_%EA%B0%80%ED%86%A8%EB%A6%AD_%ED%94%84%EB%9E%80%EC%B9%98%EC%8A%A4%EC%BD%94%EA%B5%90%ED%99%A9_G7%EC%A0%95%EC%83%81%ED%9A%8C%EC%9D%98%EC%97%B0%EC%84%A4_2024/요약.md) | 교황청 / 프란치스코 교황 | 2024 |교황 연설문 |
+| 05 | [「옛것과 새것」 교리청·문화교육청 공동 문서 (2025) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/05_%EA%B0%80%ED%86%A8%EB%A6%AD_%EA%B5%90%EB%A6%AC%EC%B2%AD%EB%AC%B8%ED%99%94%EA%B5%90%EC%9C%A1%EC%B2%AD_AntiquaEtNova_2025/요약.md) | 교리청(Dicastery for the Doctrine of the Faith) · 문화교육청(Dicastery for Culture and Education) 공동 발행 | 2025 |공식 문서(Note) |
+| 06 | [프란치스코 교황 파리 AI 정상회의 메시지 (2025) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/06_%EA%B0%80%ED%86%A8%EB%A6%AD_%ED%94%84%EB%9E%80%EC%B9%98%EC%8A%A4%EC%BD%94%EA%B5%90%ED%99%A9_%ED%8C%8C%EB%A6%ACAI%EC%A0%95%EC%83%81%ED%9A%8C%EC%9D%98%EB%A9%94%EC%8B%9C%EC%A7%80_2025/요약.md) | 교황청 / 프란치스코 교황 | 2025 |교황 메시지 |
+| 07 | [미국 가톨릭 주교회의 AI 원칙 및 정책 우선순위 공동서한 (2025) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/07_%EA%B0%80%ED%86%A8%EB%A6%AD_%EB%AF%B8%EA%B5%AD%EC%A3%BC%EA%B5%90%ED%9A%8C%EC%9D%98_AI%EA%B3%B5%EB%8F%99%EC%84%9C%ED%95%9C_2025/요약.md) | 미국 가톨릭 주교회의(USCCB) 주교 위원장들 | 2025 |의회 대상 공동서한 |
+| 08 | [레오 14세 교황 AI와 공동의 집 연설 (2025) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/08_%EA%B0%80%ED%86%A8%EB%A6%AD_%EB%A0%88%EC%98%A414%EC%84%B8_AI%EA%B3%B5%EB%8F%99%EC%9D%98%EC%A7%91_2025/요약.md) | 교황청 / 레오 14세 교황 | 2025 |교황 연설문 |
+| 09 | [WCC AI 무규제 개발에 대한 성명 (2023) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/09_WCC_%EA%B7%9C%EC%A0%9C%EB%90%98%EC%A7%80%EC%95%8A%EC%9D%80AI%EA%B0%9C%EB%B0%9C%EC%97%90%EA%B4%80%ED%95%9C%EC%84%B1%EB%AA%85_2023/요약.md) | 세계교회협의회(WCC) 중앙위원회 | 2023 |공식 성명서 |
+| 10 | [WCC 커뮤니케이션에서의 AI 사용 지침 (2025) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/10_WCC_AI%EC%82%AC%EC%9A%A9%EC%A0%95%EC%B1%85_COM06_2025/요약.md) | 세계교회협의회(WCC) 중앙위원회 | 2025 |내부 실무 지침 |
+| 11 | [포천 선언: AI와 생명경제 (2025) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/11_NIFEA_%ED%8F%AC%EC%B2%9C%EC%84%A0%EC%96%B8_AI%EC%99%80%EC%83%9D%EB%AA%85%EA%B2%BD%EC%A0%9C_2025/요약.md) | NIFEA(새로운 국제금융·경제 구조를 위한 에큐메니컬 협의체), WCC, WCRC, LWF, WMC, CWM, USPG 공동 | 2025 |에큐메니컬 공동 선언문 (코뮈니케) |
+| 12 | [PC(USA) 인공지능 가이드라인 (2023) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/12_PCUSA_%EB%AF%B8%EA%B5%AD%EC%9E%A5%EB%A1%9C%EA%B5%90_AI%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8_2023/요약.md) | 미국장로교회 PC(USA) A Corporation | 2023 |내부 직원 대상 AI 사용 지침 |
+| 13 | [PC(USA) 신실한 미래를 향한 AI 에큐메니컬 컨퍼런스 (2025) 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/13_PCUSA_%EC%8B%A0%EC%8B%A4%ED%95%9C%EB%AF%B8%EB%9E%98%EB%A5%BC%ED%96%A5%ED%95%9CAI_2025/요약.md) | 미국장로교회 PC(USA) 혁신사무국(Office of Innovation), 미국복음루터교회(ELCA), 연합감리교회(UMC), 미국성공회(The Episcopal Church) 공동 주최 | 2025 |에큐메니컬 컨퍼런스 보도 기사 |
+| 14 | [대한예수교장로회(통합) AI 시대 목회자 윤리 선언 요약](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/14_%EC%98%88%EC%9E%A5%ED%86%B5%ED%95%A9_%EB%AA%A9%ED%9A%8C%EC%9E%90%EC%9C%A4%EB%A6%AC%EC%84%A0%EC%96%B8/요약.md) | 대한예수교장로회(통합) 제109회 총회 | 2024 |윤리 선언문 / 지침 |
+| 15 | [인공지능: 윤리적 투자 자문 (EIAG)](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/15_%EC%98%81%EA%B5%AD%EC%84%B1%EA%B3%B5%ED%9A%8C_EIAG_AI%ED%88%AC%EC%9E%90%EC%9E%90%EB%AC%B8_2024/요약.md) | 영국성공회 윤리적투자자문그룹(Ethical Investment Advisory Group, EIAG) | 2024 |투자 자문 보고서 |
+| 16 | [영국성공회 총회, AI 혁명 앞에서 노동의 인간 존엄성과 목적 확인](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/16_%EC%98%81%EA%B5%AD%EC%84%B1%EA%B3%B5%ED%9A%8C_%EC%B4%9D%ED%9A%8C%EA%B2%B0%EC%9D%98_AI%EC%99%80%EC%9D%B8%EA%B0%84%EC%A1%B4%EC%97%84_2024/요약.md) | 영국성공회 총회(Church of England General Synod) | 2024 |총회 결의안 |
+| 17 | [미국성공회 내 AI 태스크포스 설립 결의안 (2024-D020)](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/17_%EB%AF%B8%EA%B5%AD%EC%84%B1%EA%B3%B5%ED%9A%8C_%EA%B2%B0%EC%9D%98%EC%95%882024-D020_AI%ED%83%9C%EC%8A%A4%ED%81%AC%ED%8F%AC%EC%8A%A4/요약.md) | 미국성공회(The Episcopal Church) 제81차 총회 | 2024 |총회 결의안 |
+| 18 | [캐나다성공회 총회 결의 C005: 교회 내 인공지능 사용](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/18_%EC%BA%90%EB%82%98%EB%8B%A4%EC%84%B1%EA%B3%B5%ED%9A%8C_%EC%B4%9D%ED%9A%8C%EA%B2%B0%EC%9D%98C005_AI%EC%82%AC%EC%9A%A9_2025/요약.md) | 캐나다성공회(Anglican Church of Canada) 총회 | 2025 |총회 결의안 |
+| 19 | [인공지능: 복음주의 원칙 선언문](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/19_%EB%82%A8%EC%B9%A8%EB%A1%80%EA%B5%90_ERLC_%EB%B3%B5%EC%9D%8C%EC%A3%BC%EC%9D%98%EC%9B%90%EC%B9%99_2019/요약.md) | 남침례교 윤리와종교자유위원회(ERLC, Ethics & Religious Liberty Commission) | 2019 |원칙 선언문(Statement of Principles) |
+| 20 | [인공지능과 신흥 기술에 관한 결의안](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/20_%EB%82%A8%EC%B9%A8%EB%A1%80%EA%B5%90_SBC_%EA%B2%B0%EC%9D%98%EC%95%88_2023/요약.md) | 남침례교 총회(Southern Baptist Convention, SBC) | 2023 |총회 결의안 |
+| 21 | [우리 손의 일: AI 시대의 기독교 사역](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/21_%EB%82%A8%EC%B9%A8%EB%A1%80%EA%B5%90_ERLC_%EC%9A%B0%EB%A6%AC%EC%86%90%EC%9D%98%EC%9D%BC_2025/요약.md) | 남침례교 윤리와종교자유위원회(ERLC) | 2025 |가이드라인/보고서 |
+| 22 | [서울 선언 (The Seoul Statement)](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/22_%EB%A1%9C%EC%9E%94%EC%9A%B4%EB%8F%99_%EC%84%9C%EC%9A%B8%EC%84%A0%EC%96%B8_2024/요약.md) | 로잔운동(Lausanne Movement) 제4차 로잔대회 | 2024 |대회 선언문 |
+| 23 | [대위임 현황 보고서: 인공지능](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/23_%EB%A1%9C%EC%9E%94%EC%9A%B4%EB%8F%99_AI%EA%B5%AD%EA%B0%80%EB%B3%B5%EC%9D%8C%EB%8C%80%EC%9C%84%EC%9E%84%EB%B3%B4%EA%B3%A0%EC%84%9C_2024/요약.md) | 로잔운동(Lausanne Movement) | 2024 |연구 보고서 |
+| 24 | [인공지능 보고서 (스코틀랜드교회 SRT)](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/24_%EC%8A%A4%EC%BD%94%ED%8B%80%EB%9E%9C%EB%93%9C%EA%B5%90%ED%9A%8C_SRT_AI%EB%B3%B4%EA%B3%A0%EC%84%9C_2022/요약.md) | 스코틀랜드교회 사회·종교·기술 프로젝트(Society, Religion and Technology Project, SRT) | 2022 |연구 보고서 |
+| 25 | [인공지능, 도덕적 기계, 그리고 할라카](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/25_%EC%9C%A0%EB%8C%80%EA%B5%90_%EB%AF%B8%EA%B5%AD%EB%9E%8D%EB%B9%84%ED%98%91%EC%9D%98%ED%9A%8C_AI%ED%95%A0%EB%9D%BC%EC%B9%B4%EA%B5%90%EC%8B%9C%EB%AC%B8_2019/요약.md) | 미국보수파유대교 랍비협의회(Rabbinical Assembly) / 랍비 다니엘 네빈스(Daniel Nevins) | 2019 |할라카 교시문(Teshuvah) |
+| 26 | [AI 윤리: 로마 콜에 대한 아브라함 종교의 공동 약속](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/26_%EC%B4%88%EC%A2%85%EA%B5%90_%EC%95%84%EB%B8%8C%EB%9D%BC%ED%95%A8%EC%A0%81%EC%95%BD%EC%86%8D_%EB%A1%9C%EB%A7%88%EC%BD%9C_2023/요약.md) | 교황청 생명학술원(Pontifical Academy for Life), 이스라엘 수석랍비청, 아부다비 평화포럼 | 2023 |종교간 공동 성명/서명 행사 |
+| 27 | [평화를 위한 AI 윤리: 세계 종교의 로마 콜 서명 (히로시마)](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/27_%EC%B4%88%EC%A2%85%EA%B5%90_%ED%9E%88%EB%A1%9C%EC%8B%9C%EB%A7%88%EB%8B%A4%EC%A2%85%EA%B5%90%EC%95%BD%EC%86%8D_%EB%A1%9C%EB%A7%88%EC%BD%9C_2024/요약.md) | 교황청 생명학술원, 일본종교평화협의회(Religions for Peace Japan), 아부다비 평화포럼, 이스라엘 수석랍비청 | 2024 |다종교 공동 서명/성명 |
+| 28 | [히로시마 부속서: 생성형 AI에 관한 로마 콜 보완 문서](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/28_%EC%B4%88%EC%A2%85%EA%B5%90_%ED%9E%88%EB%A1%9C%EC%8B%9C%EB%A7%88%EB%B6%80%EC%86%8D%EC%84%9C_%EC%83%9D%EC%84%B1%ED%98%95AI_2024/요약.md) | 교황청 생명학술원 / 르네상스재단(RenAIssance Foundation) | 2024 |부속서(Addendum) |
+| 29 | [레오 14세 교황 회칙 「고귀한 인류」(Magnifica Humanitas)](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/29_%EA%B0%80%ED%86%A8%EB%A6%AD_%EB%A0%88%EC%98%A414%EC%84%B8_MagnificaHumanitas%ED%9A%8C%EC%B9%99_2026/요약.md) | 레오 14세 교황 (Pope Leo XIV) | 2026 |회칙 (Encyclical Letter) — 교황 교서 중 최고 권위 |
+| 30 | [영국성공회 교회용 생성형 AI 실무 가이드](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/30_%EC%84%B1%EA%B3%B5%ED%9A%8C_%EC%98%81%EA%B5%AD%EC%84%B1%EA%B3%B5%ED%9A%8C_AI%EC%8B%A4%EB%AC%B4%EA%B0%80%EC%9D%B4%EB%93%9C_2026/요약.md) | 영국성공회 (Church of England) | 2026 |본당·교회용 실무 가이드 |
+| 31 | [미국장로교 총회 AI 정책 「알고리즘과 전능하신 하나님」](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/31_%EC%9E%A5%EB%A1%9C%EA%B5%90_PCUSA_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%EC%A0%84%EB%8A%A5%EC%9E%90_2026/요약.md) | 미국장로교(PCUSA) 제227회 총회 | 2026 |총회 채택 사회증언 정책 |
+| 32 | [미국장로교 개교회·중간 치리회용 AI 정책 예시](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/32_%EC%9E%A5%EB%A1%9C%EA%B5%90_PCUSA_%EA%B0%9C%EA%B5%90%ED%9A%8C_AI%EC%A0%95%EC%B1%85%EC%98%88%EC%8B%9C_2026/요약.md) | 미국장로교(PCUSA) 사회증언정책 자문위원회 | 2026 |개교회·치리회용 정책 예시 |
+| 33 | [AI Christian Partnership 기독교 사역 AI 지침](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/33_%EC%97%90%ED%81%90%EB%A9%94%EB%8B%88%EC%BB%AC_AICP_%EA%B8%B0%EB%8F%85%EA%B5%90%EC%82%AC%EC%97%AD_AI%EC%A7%80%EC%B9%A8_2026/요약.md) | The AI Christian Partnership | 2026 |초교파 단체 실무 지침 |
+| 34 | [레오 14세 제60차 세계 홍보의 날 담화 「인간의 목소리와 얼굴을 지키기」](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/34_%EA%B0%80%ED%86%A8%EB%A6%AD_%EB%A0%88%EC%98%A414%EC%84%B8_%EC%82%AC%ED%9A%8C%ED%99%8D%EB%B3%B4%EC%A3%BC%EC%9D%BC_AI_2026/요약.md) | 레오 14세 교황 | 2026 |교황 담화 |
+| 35 | [예장합동 「인공지능 윤리 및 신앙 활용 가이드라인」](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/35_%EC%9E%A5%EB%A1%9C%EA%B5%90_%EC%98%88%EC%9E%A5%ED%95%A9%EB%8F%99_AI%EC%9C%A4%EB%A6%AC%EB%B0%8F%EC%8B%A0%EC%95%99%ED%99%9C%EC%9A%A9_2026/요약.md) | 대한예수교장로회(합동) 제111회 총회 | 2026 |총회 채택 가이드라인 · 보도 기반 요약 |
+| 36 | [국제이슬람법학아카데미 AI 규정·지침·윤리 결의](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/36_%EC%9D%B4%EC%8A%AC%EB%9E%8C_IIFA_AI%EB%B2%95%EC%A0%81%ED%8C%90%EB%8B%A8%EA%B3%BC%EC%9C%A4%EB%A6%AC_2025/요약.md) | 국제이슬람법학아카데미(IIFA) 이사회 | 2025 |이슬람 법학기관 결의 제258호 |
+| 37 | [UNIDIR 종교 간 AI·안보·윤리 대화 보고서](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/37_%EC%B4%88%EC%A2%85%EA%B5%90_UNIDIR_AI%EC%95%88%EB%B3%B4%EC%9C%A4%EB%A6%AC_%EB%8C%80%ED%99%94%EB%B3%B4%EA%B3%A0%EC%84%9C_2026/요약.md) | 유엔군축연구소(UNIDIR) | 2026 |종교 간 대화 연구보고서 |
+| 38 | [미국 랍비협의회 전문직 윤리강령의 AI 관련 조항](%EA%B5%90%EB%8B%A8%EB%B3%84%20AI%20%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8/38_%EC%9C%A0%EB%8C%80%EA%B5%90_RA_%EC%A0%84%EB%AC%B8%EC%A7%81%EC%9C%A4%EB%A6%AC%EA%B0%95%EB%A0%B9_AI%EC%A1%B0%ED%95%AD_2025/요약.md) | 미국 랍비협의회 (Rabbinical Assembly) | 2025 |전문직 윤리강령 중 AI 관련 조항 |
 
-종교 단체·교단·교회 협의체가 공식 발표한 AI 윤리 가이드라인·성명·결의안·교령.
+## 수록과 갱신
 
-| # | 문서 | 발행 주체 | 연도 | 전통 |
-|---|------|----------|------|------|
-| 01 | Rome Call for AI Ethics | 교황청 생명학술원 | 2020 | 가톨릭 |
-| 02 | 세계 평화의 날 메시지: AI와 평화 | 프란치스코 교황 | 2024 | 가톨릭 |
-| 03 | 세계 커뮤니케이션의 날 메시지: AI와 마음의 지혜 | 프란치스코 교황 | 2024 | 가톨릭 |
-| 04 | G7 정상회의 AI 세션 연설 | 프란치스코 교황 | 2024 | 가톨릭 |
-| 05 | Antiqua et Nova | 교리청·문화교육청 | 2025 | 가톨릭 |
-| 06 | 파리 AI 정상회의 메시지 | 프란치스코 교황 | 2025 | 가톨릭 |
-| 07 | AI 원칙·우선순위 공동서한 | 미국 가톨릭 주교회의 | 2025 | 가톨릭 |
-| 08 | AI와 공동의 집 돌봄 | 레오 14세 교황 | 2025 | 가톨릭 |
-| 09 | 규제되지 않은 AI 개발에 관한 성명 | WCC | 2023 | 에큐메니컬 |
-| 10 | AI 사용 정책 (COM 06) | WCC | 2025 | 에큐메니컬 |
-| 11 | 포천 공동선언: AI와 생명경제 | NIFEA (6개 교회 협의체) | 2025 | 에큐메니컬 |
-| 12 | AI 가이드라인 | PC(USA) 미국장로교 | 2023 | 장로교 |
-| 13 | 신실한 미래를 향한 AI | PC(USA) | 2025 | 장로교 |
-| 14 | 인공지능 시대, 목회자 윤리 선언 | 예장통합 | 2023 | 장로교 |
-| 15 | AI 윤리 투자 자문 | 영국성공회 EIAG | 2024 | 성공회 |
-| 16 | 총회 결의: AI와 인간 존엄 | 영국성공회 | 2024 | 성공회 |
-| 17 | 결의안 2024-D020 AI 태스크포스 | 미국성공회 | 2024 | 성공회 |
-| 18 | 총회 결의 C005: 교회 내 AI 사용 | 캐나다성공회 | 2025 | 성공회 |
-| 19 | 복음주의 AI 원칙 성명 | 남침례교 ERLC | 2019 | 복음주의 |
-| 20 | AI 및 신기술 결의안 | 남침례교 SBC | 2023 | 복음주의 |
-| 21 | The Work of Our Hands | 남침례교 ERLC | 2025 | 복음주의 |
-| 22 | 서울 선언 (Lausanne 4) | 로잔 운동 | 2024 | 복음주의 |
-| 23 | AI 국가복음대위임 보고서 | 로잔 운동 | 2024 | 복음주의 |
-| 24 | AI 보고서 | 스코틀랜드교회 SRT | 2022 | 장로교 |
-| 25 | AI·도덕적 기계·할라카 교시문 | 미국랍비협의회 | 2019 | 유대교 |
-| 26 | 아브라함 종교 공동 약속 | 로마콜 (3대 종교) | 2023 | 초종교 |
-| 27 | AI Ethics for Peace 히로시마 | 로마콜 (7대 종교) | 2024 | 초종교 |
-| 28 | 히로시마 부속서: 생성형 AI | 로마콜 | 2024 | 초종교 |
-
----
-
-## 폴더 구조
-
-```
-AI윤리가이드라인모음/
-├── README.md                          ← 이 파일
-├── 국가기관별 AI 윤리 가이드라인/
-│   ├── README.md
-│   ├── 01_UNESCO_AI윤리권고_2021/
-│   │   ├── *.pdf (원문)
-│   │   └── 요약.md (한국어 요약·분석)
-│   ├── 02_OECD_AI원칙_2019_2024/
-│   │   └── ...
-│   └── ... (총 19건)
-└── 교단별 AI 가이드라인/
-    ├── README.md
-    ├── 01_가톨릭_교황청생명학술원_로마콜_2020/
-    │   ├── *.pdf (원문)
-    │   └── 요약.md (한국어 요약·분석)
-    ├── 02_가톨릭_프란치스코교황_세계평화의날메시지_2024/
-    │   └── ...
-    └── ... (총 28건)
-```
-
-각 문서 폴더에는 **원문**(PDF 또는 HTML)과 **요약.md**(한국어 요약·분석)가 포함되어 있다.
-
----
-
-## 수집 기준
-
-- **국가기관별**: 국제기구·정부가 공식 채택 또는 발행한 AI 윤리 문서
-- **교단별**: 종교 단체·교단·교회 협의체가 공식 채택한 AI 윤리 가이드라인·성명·결의안·교령
-- 개인 논평·학술 논문·비공식 발언은 제외하고, 기관 차원의 공식 문서만 수록
-
-## 참고사항
-
-- 원문은 영문 또는 해당 국가 언어이며, 요약.md는 한국어로 작성
-- 교단별 자료는 가족별(가톨릭 → 에큐메니컬 → 장로교 → 성공회 → 복음주의 → 기타 → 유대교 → 초종교)·연대순 정리
-- 정교회·이슬람·불교·힌두교 등은 교단 차원의 공식 AI 문서가 미발견되어 미수록 (초종교 공동 서명으로 참여)
+- 정부·국제기구·종교기관 등의 법령, 공식 정책, 결의, 지침, 선언과 관련 이행 자료를 수록한다. 정책 예시, 연구보고서, 개념 문서는 각 문서의 성격을 표시한다.
+- 개별 폴더의 `요약.md`는 한국어 해설이다. 원문은 발행처 링크를 우선 사용하며 저장소에 수집본이 있는 경우 함께 보존한다. 원문을 확보하지 못한 예장합동 자료는 채택 보도와 그에 근거한 요약으로 표시한다.
+- 새 문서의 요약과 `build_data.py` 메타데이터를 추가한 뒤 `python3 build_data.py`로 `data.js`를 재생성한다.
+- `magnifica.html`은 교황청 영문 원문과 자체 번역을 위한 별도 뷰어다. 공식 한국어판은 [한국천주교주교회의 출간 안내](https://cbck.or.kr/Documents/Pope/20261466)를 참고한다.
